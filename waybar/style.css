@@ -1,95 +1,51 @@
-@import "tokyonight.css";
-* {
-    border: none;
-    border-radius: 0;
-    font-family: JetBrainsMono Nerd Font;
-    font-size: 14px;
+*{
+    font-family: Roboto Mono Nerd Font;
+    font-size: 13px;
     min-height: 0;
+    color: #C5C8C6;
 }
 
 window#waybar {
-    background: @BASE;
-    color: @TEXT;
+    background-color: #242632;
 }
 
-#workspaces {
-	background-color: @BASE;
-	margin: 5px;
-	margin-left: 10px;
-	border-radius: 5px;
-}
-#workspaces button {
-    padding: 5px 10px;
-    color: @TEXT_100;
-}
-
-#workspaces button.focused {
-    color: @BASE;
-    background-color: @BLUEBERRY_100;
-    border-radius: 5px;
-}
-
-#workspaces button:hover {
-	background-color: @SLATE_500;
-	color: @SILVER_500;
-	border-radius: 5px;
-}
-
-#custom-date, #cpu, #memory, #clock, #battery, #pulseaudio, #network, #tray  {
-	color: @BASE_100;
-	border-radius: 5px;
-	margin-right: 10px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	margin-left: 0px;
-	padding: 5px 10px;
-}
-
-#custom-date {
-	color: @LIME_900;
-}
-
-#custom-power {
-	color: @BASE_100;
-	background-color: @STRAWBERRY_700;
-	border-radius: 5px;
-	margin-right: 10px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	margin-left: 0px;
-	padding: 5px 10px;
-}
-#memory {
-    	background-color: @BLUEBERRY_100;
-}
-#cpu {
-	background-color: @LIME_100;
-}
-
-#clock {
-    background-color: @GRAPE_100;
+#workspaces{
+    margin-top: 3px;
+    margin-bottom: 2px;
     margin-right: 10px;
+    margin-left: 25px;
 }
 
-#battery {
-    background-color: @STRAWBERRY_100;
+#workspaces button{
+    border-radius: 15px;
+    margin-right: 10px;
+    padding: 1px 3px;
+    font-weight: bolder;
+    background-color: #3a3c47;
 }
 
-#battery.charging {
-    background-color: @STRAWBERRY_900;
+#workspaces button.active, #workspaces button.focused{
+    padding: 0 3px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;    
+    background: #587D8F;
 }
 
-#battery.warning:not(.charging) {
-    background-color: @STRAWBERRY_900;
-}
-
+#tray,
+#mpd,
+#custom-weather,
+#cpu, 
+#temperature, 
+#memory,
+#sway-mode,
+#backlight, 
+#pulseaudio, 
+#custom-vpn,
+#disk,
+#custom-recorder,
+#custom-audiorec,
+#battery, 
+#clock, 
 #network {
-    background-color: @COCOA_100;
-	border-radius: 5px 0px 0px 5px;
+	padding: 0 10px;
 }
-#tray {
-	background-color: @SLATE_100;
-}
-#pulseaudio {
-    background-color: @ORANGE_100;
-}
+
