@@ -7,7 +7,7 @@
 
 "modules-left": ["clock","sway/window"],
 "modules-center": ["sway/workspaces"],
-"modules-right":  ["tray","disk","cpu","memory","pulseaudio"],
+"modules-right":  ["tray","disk","cpu","memory","pulseaudio","custom/notification"],
 
 "sway/mode": {
     "format": "<span style=\"italic\">{}</span>"
@@ -86,7 +86,7 @@
 	"input": true
 
   },
-    "custom/notification": {
+ "custom/notification": {
     "tooltip": false,
     "format": "<span foreground='#E69875'> {icon} </span>",
     "format-icons": {

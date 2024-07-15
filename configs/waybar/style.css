@@ -1,39 +1,38 @@
-* {
-    font-family: 'Roboto Mono Nerd Font', monospace;
+*{
+    font-family: Roboto Mono Nerd Font;
     font-size: 13px;
     min-height: 0;
-    color: #F8F8F2; /* Dracula foreground color */
+    color: #f8f8f2;
 }
 
 window#waybar {
-    background-color: #282A36; /* Dracula background color */
+    background-color: #282a36;
 }
 
-#workspaces {
+#workspaces{
     margin-top: 3px;
     margin-bottom: 2px;
     margin-right: 10px;
     margin-left: 25px;
 }
 
-#workspaces button {
+#workspaces button{
     border-radius: 15px;
     margin-right: 10px;
     padding: 1px 3px;
-    font-weight: bold; /* Adjusted to 'bold' for clarity */
-    background-color: #44475A; /* Dracula selection background */
-    color: #BD93F9; /* Dracula active workspace text color */
+    font-weight: bold;
+    background-color: #44475a;
+    color: #bd93f9;
 }
 
-#workspaces button.active,
-#workspaces button.focused {
+#workspaces button.active, #workspaces button.focused{
     padding: 0 3px;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;    
-    background: #a656dd; /* Dracula active workspace background */
-    color: #282A36; /* Dracula active workspace text color */
+    background: #a656dd;
+    color: #282a36;
+    
 }
 
-/* Additional styling for modules */
 #tray,
 #mpd,
 #custom-weather,
@@ -50,5 +49,6 @@ window#waybar {
 #battery, 
 #clock, 
 #network {
-    padding: 0 10px;
+	padding: 0 10px;
 }
+

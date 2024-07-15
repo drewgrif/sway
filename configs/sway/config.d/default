@@ -7,12 +7,13 @@ set $menu rofi -show drun -modi drun -line-padding 4 -hide-scrollbar -show-icons
 
 # wallpaper
 # output * background ~/.config/backgrounds/debdino.png fill
-output * background ~/.config/backgrounds/wallhaven-wex83x_3440x1440.png fill
+output * background ~/.config/backgrounds/wallhaven-zyj28v_3440x1440.png fill
 
 # shortcuts
 bindsym $mod+Return exec $term
 bindsym $mod+Shift+Return exec kitty
 bindsym $mod+Space exec $menu
+bindsym $mod+n exec swaync-client -t -sw
 bindsym $mod+f exec thunar
 bindsym $mod+b exec firefox-esr
 bindsym $mod+Shift+b exec firefox-esr -private-window
@@ -57,7 +58,7 @@ bindsym $mod+Ctrl+Right resize grow width 20px
 bindsym $mod+Insert exec ~/scripts/changevolume up
 bindsym $mod+Delete exec ~/scripts/changevolume down
 bindsym $mod+m exec ~/scripts/changevolume mute
-	
+
 # dedicated volume keys
 {XF86AudioRaiseVolume,XF86AudioLowerVolume}
 	pamixer {-i,-d} 2
