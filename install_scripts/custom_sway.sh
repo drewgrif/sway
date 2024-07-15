@@ -71,6 +71,7 @@ bash ~/sway/install_scripts/rofi-wayland
 # moving custom config
 \cp -r ~/sway/configs/scripts/ ~
 \cp -r ~/sway/configs/sway/ ~/.config/
+\cp -r ~/sway/configs/swaync/ ~/.config/
 \cp -r ~/sway/configs/waybar/ ~/.config/
 \cp -r ~/sway/configs/rofi/ ~/.config/
 \cp -r ~/sway/configs/kitty/ ~/.config/
