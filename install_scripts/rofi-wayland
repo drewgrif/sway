@@ -1,16 +1,30 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-sudo apt install -y bison flex
+# Function to check if nwg-look is already installed
+check_rofi_wayland_installed() {
+    # Check if the nwg-look executable exists in PATH
+    command -v rofi >/dev/null 2>&1
+}
 
-cd ~/Downloads
+# Check if nwg-look is already installed
+if check_rofi_wayland_installed; then
+    echo "rofi is already installed."
+    exit 0
+fi
 
-git clone https://github.com/lbonn/rofi.git
-cd rofi
+# Create a temporary directory
+temp_dir=$(mktemp -d)
+cd "$temp_dir"
+
+# Install dependencies
+sudo apt install -y bison flex ninja-build meson cmake cmake-extras libxcb-xkb-dev libxcb-util0-dev libxkbcommon-x11-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-randr0-dev libxcb-util0-dev libxcb-xinerama0-dev libxkbcommon-dev libxcb-cursor-dev libstartup-notification0-dev zip
+
+# Download and rofi for wayaland
+git clone https://github.com/lbonn/rofi.git ~/sway/rofi
+
+cd ~/sway/rofi
 meson setup build && ninja -C build
 sudo ninja -C build install
-
-cd ..
-rm -rf rofi
 
 
 
