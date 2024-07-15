@@ -26,20 +26,20 @@ else
 fi
 
 # Check if Colloid-gtk-theme is installed
-if check_directory "$HOME/.themes/Colloid-Dark"; then
-    echo "Colloid-gtk-theme is already installed."
+if check_directory "$HOME/.themes/Lavanda-Dark"; then
+    echo "Lavanda-gtk-theme is already installed."
 else
-    echo "Installing Colloid-gtk-theme..."
+    echo "Installing Lavanda-gtk-theme..."
     cd ~/Downloads || exit
-    if [ -d "Colloid-gtk-theme" ]; then
-        echo "Colloid-gtk-theme repository already cloned. Skipping clone step."
+    if [ -d "Lavanda-gtk-theme" ]; then
+        echo "Lavanda-gtk-theme repository already cloned. Skipping clone step."
     else
-        git clone https://github.com/vinceliuice/Colloid-gtk-theme.git
+        git clone https://github.com/vinceliuice/Lavanda-gtk-theme.git
     fi
-    cd Colloid-gtk-theme || exit
-    yes | ./install.sh -c dark -t default --tweaks black
-    rm -rf ~/Downloads/Colloid-gtk-theme
+    cd Lavanda-gtk-theme || exit
+    yes | ./install.sh -c dark -t standard -s standard -i debian
+    rm -rf ~/Downloads/Lavanda-gtk-theme
 fi
 
 
-bash ~/bookworm-scripts/colorschemes/update_gtk_settings.sh
+bash ~/sway/colorschemes/update_gtk_settings.sh

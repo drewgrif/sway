@@ -3,7 +3,7 @@ set $mod Mod4
 
 # set terminal and menu
 set $term tilix
-set $menu rofi -show drun
+set $menu rofi -show drun -modi drun -line-padding 4 -hide-scrollbar -show-icons
 
 # wallpaper
 # output * background ~/.config/backgrounds/debdino.png fill
@@ -51,10 +51,23 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Ctrl+Left resize shrink width 20px
 bindsym $mod+Ctrl+Right resize grow width 20px
 
-# audio
-bindsym $mod+shift+k exec ~/bin/changevolume up
-bindsym $mod+shift+j exec ~/bin/changevolume down
-bindsym $mod+shift+m exec ~/bin/changevolume mute
+# Change volume, chunky
+super + Insert
+    ~/scripts/changevolume up
+    
+super + Delete
+	~/scripts/changevolume down
+	
+super + m
+	~/scripts/changevolume mute
+	
+# dedicated volume keys
+{XF86AudioRaiseVolume,XF86AudioLowerVolume}
+	pamixer {-i,-d} 2
+
+# dedicated backlight keys
+{XF86MonBrightnessUp,XF86MonBrightnessDown}
+	xbacklight {+10,-10}
 
 #
 # Workspaces:

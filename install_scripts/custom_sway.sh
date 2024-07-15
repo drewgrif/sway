@@ -74,6 +74,6 @@ bash ~/sway/nwg-look
 \cp -r ~/sway/configs/backgrounds/ ~/.config/
 
 # adding gtk theme and icon theme
-bash ~/sway/colorschemes/blue.sh
+bash ~/sway/colorschemes/purple.sh
 
 
