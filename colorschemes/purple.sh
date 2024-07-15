@@ -25,7 +25,7 @@ else
     rm -rf ~/Downloads/Colloid-icon-theme/
 fi
 
-# Check if Colloid-gtk-theme is installed
+# Check if Lavanda-Dark is installed
 if check_directory "$HOME/.themes/Lavanda-Dark"; then
     echo "Lavanda-gtk-theme is already installed."
 else

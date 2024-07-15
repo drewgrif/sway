@@ -53,7 +53,7 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Ctrl+Left resize shrink width 20px
 bindsym $mod+Ctrl+Right resize grow width 20px
 
-# Change volume, chunky
+# audio
 bindsym $mod+Insert exec ~/scripts/changevolume up
 bindsym $mod+Delete exec ~/scripts/changevolume down
 bindsym $mod+m exec ~/scripts/changevolume mute
@@ -105,12 +105,12 @@ gaps outer 1
 default_border pixel 3
 
 ### Borders
-client.focused          #a5adcb #a5adcb #24283b #a5adcb #a5adcb
-client.focused_inactive #24283b #24283b #a5adcb #24283b #24283b
-client.unfocused        #24283b #24283b #a5adcb #24283b #24283b
-client.urgent           #F15D22 #F15D22 #24283b #F15D22 #F15D22
-client.placeholder      #24283b #24283b #a5adcb #24283b #24283b
-client.background       #24283b
+client.focused          #bd93f9 #bd93f9 #282a36 #bd93f9 #bd93f9
+client.focused_inactive #282a36 #282a36 #bd93f9 #282a36 #282a36
+client.unfocused        #282a36 #282a36 #bd93f9 #282a36 #282a36
+client.urgent           #ff5555 #ff5555 #282a36 #ff5555 #ff5555
+client.placeholder      #282a36 #282a36 #bd93f9 #282a36 #282a36
+client.background       #282a36
 
 bar { 
      swaybar_command waybar
