@@ -15,12 +15,14 @@ bindsym $mod+Shift+Return exec kitty
 bindsym $mod+Space exec $menu
 bindsym $mod+f exec thunar
 bindsym $mod+b exec firefox-esr
+bindsym $mod+Shift+b exec firefox-esr -private-window
 bindsym $mod+e exec geany
 bindsym $mod+g exec swaymsg "workspace 8; exec gimp"
 bindsym $mod+d exec swaymsg "workspace 9; exec Discord"
 bindsym $mod+o exec swaymsg "workspace 10; exec obs"
 bindsym $mod+r exec tilix -e ranger
 bindsym $mod+v exec tilix -e nvim
+bindsym $mod+h exec ~/.config/sway/keyhelper.sh
 
 # rules
 for_window [app_id="pavucontrol"] floating enable
@@ -33,7 +35,7 @@ for_window [app_id="qimgv"] floating enable, resize set 1280 720
 # windows
 bindsym $mod+q kill
 bindsym $mod+Shift+r reload; exec notify-send 'sway' 'Restarted'
-bindsym $mod+Shift+e exit
+bindsym $mod+Shift+q exit
 
 # move focus
 bindsym $mod+Left focus left
@@ -52,14 +54,9 @@ bindsym $mod+Ctrl+Left resize shrink width 20px
 bindsym $mod+Ctrl+Right resize grow width 20px
 
 # Change volume, chunky
-super + Insert
-    ~/scripts/changevolume up
-    
-super + Delete
-	~/scripts/changevolume down
-	
-super + m
-	~/scripts/changevolume mute
+bindsym $mod+Insert exec ~/scripts/changevolume up
+bindsym $mod+Delete exec ~/scripts/changevolume down
+bindsym $mod+m exec ~/scripts/changevolume mute
 	
 # dedicated volume keys
 {XF86AudioRaiseVolume,XF86AudioLowerVolume}

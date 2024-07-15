@@ -63,7 +63,10 @@ mkdir ~/Screenshots/
 bash ~/sway/install_scripts/nerdfonts.sh
 
 # install nwg-look
-bash ~/sway/nwg-look
+bash ~/sway/install_scripts/nwg-look
+
+# install rofi-wayland
+bash ~/sway/install_scripts/rofi-wayland
 
 # moving custom config
 \cp -r ~/sway/configs/scripts/ ~

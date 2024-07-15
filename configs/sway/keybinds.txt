@@ -1,0 +1,49 @@
+SWAY KEY BINDINGS
+------------------
+Super + Space --- Rofi Menu
+Super + q --- Close window
+Super + Right --- Change Focus Right
+Super + Left --- Change Focus Left
+Super + Shift + Right --- Move Window Right
+Super + Shift + Left --- Move Window Left
+Super + Ctrl + Left --- Resize Left 
+Super + Ctrl + Right --- Resize Right
+Super + Ctrl + Up --- Resize Up 
+Super + Ctrl + Down --- Resize Down
+
+Super + Shift + q --- Quit SWAY
+Super + Shift + r --- Restart SWAY
+Super + h --- This screen
+
+SWAY TAG BINDINGS
+----------------
+Super + (1-9,0) --- Switch to tag (workspace 1-10)
+Super + Shift + (1-9,0) ---  Move Window to tag (workspace 1-10)
+	
+APPLICATIONS
+------------
+Super + Space --- Rofi Menu
+Super + Return --- Tilix
+Super + Shift + Return --- Kitty (floating)
+Super + b --- Firefox-ESR
+Super + Shift + b --- Firefox-ESR -private-window
+Super + f --- Thunar
+Super + e --- Geany
+Super + n --- Sway Notification Center
+
+AUDIO
+-----
+Super + Insert --- Volume Up
+Super + Delete --- Volume Down
+Super + m --- Muted
+
+GRIM/SLURP
+----------
+Super + @Print --- Select Rectangle Screenshot
+@Print --- Fullscreen Screenshot
+
+REDSHIFT
+--------
+Super + Alt + r --- Redshift On (night)
+Super + Alt + b --- Redshift off (daytime)
+
