@@ -33,5 +33,3 @@ cd "$temp_dir"
 rm -rf nwg-look-0.2.7
 rm v0.2.7.zip
 rmdir "$temp_dir"
-
-
