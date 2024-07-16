@@ -4,3 +4,8 @@ exec /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 # notifications
 exec swaync
 
+exec swayidle \
+   timeout 900 'swaylock -f -c 000000' \
+   timeout 1800 'swaymsg "output * dpms off"' \
+      resume 'swaymsg "output * dpms on"' \
+   before-sleep 'swaylock -f -c 000000'
