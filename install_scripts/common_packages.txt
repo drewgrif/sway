@@ -36,6 +36,7 @@ papirus-icon-theme
 pavucontrol
 policykit-1-gnome 
 pulsemixer
+qimgv
 redshift
 slurp
 tilix
