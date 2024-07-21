@@ -59,14 +59,6 @@ bindsym $mod+Insert exec ~/scripts/changevolume up
 bindsym $mod+Delete exec ~/scripts/changevolume down
 bindsym $mod+m exec ~/scripts/changevolume mute
 
-# dedicated volume keys
-{XF86AudioRaiseVolume,XF86AudioLowerVolume}
-	pamixer {-i,-d} 2
-
-# dedicated backlight keys
-{XF86MonBrightnessUp,XF86MonBrightnessDown}
-	xbacklight {+10,-10}
-
 #
 # Workspaces:
 #
