@@ -22,8 +22,8 @@ bindsym $mod+g exec swaymsg "workspace 8; exec gimp"
 bindsym $mod+d exec swaymsg "workspace 9; exec Discord"
 bindsym $mod+o exec swaymsg "workspace 10; exec obs"
 bindsym $mod+r exec tilix -e ranger
-bindsym $mod+v exec tilix -e nvim
-bindsym $mod+h exec ~/.config/sway/keyhelper.sh
+# bindsym $mod+v exec tilix -e nvim
+bindsym $mod+h exec tilix -e ~/.config/sway/keyhelper.sh
 
 # rules
 for_window [app_id="pavucontrol"] floating enable
