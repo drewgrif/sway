@@ -2,12 +2,16 @@
 
 # Function to install vanilla sway
 install_vanilla_sway() {
+    echo "Set Keyboardlayout for Sway"
+    bash ~/sway/install_scripts/keyboard.sh
     echo "Installing vanilla sway..."
     bash ~/sway/install_scripts/vanilla_sway.sh
 }
 
 # Function to install customized swayWM
 install_custom_sway() {
+    echo "Set Keyboardlayout for Sway"
+    bash ~/sway/install_scripts/keyboard.sh
     echo "Installing JUSTAGUYLINUX customized sway..."
     bash ~/sway/install_scripts/custom_sway.sh
 }
