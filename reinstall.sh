@@ -15,7 +15,7 @@ echo "
 
 clear 
 
-for script in setup.sh packages.sh display_manager.sh add_bashrc.sh printers.sh bluetooth.sh ; do
+for script in setup.sh packages.sh display_manager.sh add_bashrc.sh printers.sh bluetooth.sh addsession.sh; do
     script_path="$HOME/sway/install_scripts/$script"
     if [ -x "$script_path" ]; then
         bash "$script_path"
