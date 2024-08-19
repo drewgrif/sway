@@ -68,6 +68,12 @@ bash ~/sway/install_scripts/printers.sh
 clear 
 
 bash ~/sway/install_scripts/bluetooth.sh
+
+bash ~/sway/install_scripts/addsession.sh
+
+clear 
+
+
 sudo apt autoremove
 
 printf "\e[1;32mYou can now reboot! Thanks you.\e[0m\n"
