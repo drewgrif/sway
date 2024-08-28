@@ -11,6 +11,7 @@ firefox-esr
 fonts-font-awesome
 fonts-recommended 
 fonts-terminus 
+gammastep
 geany
 geany-plugin-addons 
 geany-plugin-automark
