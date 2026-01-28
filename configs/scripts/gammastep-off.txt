@@ -1,0 +1,3 @@
+#!/bin/sh
+gammastep -m randr -x
+notify-send "Gammastep off" "Temperature color: normal"

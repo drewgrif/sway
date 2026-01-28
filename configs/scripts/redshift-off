@@ -1,3 +1,0 @@
-#! /bin/sh
-redshift -m randr -x
-notify-send "Redshift off" "Temperature color: normal"
