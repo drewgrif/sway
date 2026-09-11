@@ -2,11 +2,11 @@
 
 **Sway Wayland compositor setup for Debian**
 
-This project has migrated to **Codeberg** for better alignment with open-source values.
+This project lives on my own Forgejo instance, **ButterForge**.
 
-## 👉 New Location: [codeberg.org/justaguylinux/sway-setup](https://codeberg.org/justaguylinux/sway-setup)
+## 👉 New Location: [justaguy.dev/drew/sway-setup](https://justaguy.dev/drew/sway-setup)
 
-**⚠️ This GitHub repository is archived and read-only. DO NOT USE.**
+**⚠️ This GitHub repository is frozen. DO NOT USE.**
 
 **This code is from a previous version of Debian and is no longer maintained.**
 
@@ -18,7 +18,7 @@ Please visit the new repository for:
 
 **Update your git remote:**
 ```bash
-git remote set-url origin https://codeberg.org/justaguylinux/sway-setup.git
+git remote set-url origin https://justaguy.dev/drew/sway-setup.git
 ```
 
 ---
@@ -33,8 +33,8 @@ git remote set-url origin https://codeberg.org/justaguylinux/sway-setup.git
 
 <div align="center">
 
-**Supporting truly open-source infrastructure** 🚀
+**Self-hosted, self-maintained** 🚀
 
-[![Codeberg](https://img.shields.io/badge/Hosted%20on-Codeberg-2185D0?style=for-the-badge)](https://codeberg.org/justaguylinux)
+[![ButterForge](https://img.shields.io/badge/Hosted%20on-ButterForge-F2A93B?style=for-the-badge)](https://justaguy.dev/drew)
 
 </div>
